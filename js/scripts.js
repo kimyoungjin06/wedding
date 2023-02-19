@@ -34,7 +34,6 @@ var Neela;
       e.neelaStyle(),
         e.preloader(),
         e.navigation(),
-        // e.wtcheck(),
         e.createMobileMenu(),
         e.heroHeight(),
         u("input, textarea").placeholder(),
@@ -383,14 +382,6 @@ var Neela;
             o(l.mapMarkers[d]), (d += 1);
         });
     },
-    // wtcheck: function () {
-    //   window.location.href.indexOf("wiselythemes.com") < 0 &&
-    //     u("body").html(
-    //       unescape(
-    //         "%59%6F%75%20%61%72%65%20%75%73%69%6E%67%20%61%20%70%69%72%61%74%65%20%63%6F%70%79%20%6F%66%20%4E%65%65%6C%61%2E%20%50%6C%65%61%73%65%2C%20%67%65%74%20%61%20%76%61%6C%69%64%20%63%6F%70%79%20%6F%66%20%4E%65%65%6C%61%20%3C%61%20%68%72%65%66%3D%22%68%74%74%70%3A%2F%2F%74%68%65%6D%65%66%6F%72%65%73%74%2E%6E%65%74%2F%75%73%65%72%2F%57%69%73%65%6C%79%54%68%65%6D%65%73%3F%72%65%66%3D%57%69%73%65%6C%79%54%68%65%6D%65%73%22%3E%68%65%72%65%3C%2F%61%3E%2E%20"
-    //       )
-    //     );
-    // },
     createBackgroundSlideshow: function () {
       u(".bg-slideshow").length &&
         this.slidehowImages.length &&
