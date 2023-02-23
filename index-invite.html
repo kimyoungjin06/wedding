@@ -244,11 +244,17 @@
 								</div>
 								
 								<div class="center">
-									<div class="g-recaptcha" data-sitekey="6LcTJDEUAAAAACOL__6CedRrCb6m2M94OSmqF4MV"></div>
+									<button class="g-recaptcha" 
+										data-sitekey="6LcpEqkkAAAAADtsbijeRHLdcbreS8C4sL2zZ0ts" 
+										data-callback='onSubmit' 
+										data-action='submit'>Submit</button>
+									</form>
 								</div>
+								<!-- <div class="center">
+									<div class="g-recaptcha" data-sitekey="6LcTJDEUAAAAACOL__6CedRrCb6m2M94OSmqF4MV"></div>
+								</div> -->
 								
 								<div class="form_status_message"></div>
-								
 								<div class="center">
 									<button type="submit" class="btn btn-primary submit_form">Send</button>
 								</div>
@@ -336,6 +342,12 @@
 
 	<!-- Google reCaptcha API for RSVP -->
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script>
+		function onSubmit(token) {
+		  document.getElementById("demo-form").submit();
+		}
+	</script>
     
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JZLG63NQZ"></script>
