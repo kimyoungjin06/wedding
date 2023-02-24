@@ -705,7 +705,7 @@ var Neela;
               o.addClass("disabled"),
               u.ajax({
                 type: "POST",
-                url: "contact.php",
+                url: "https://formspree.io/f/xgebkbke",
                 data: c,
                 success: function (e) {
                   a(),
