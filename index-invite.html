@@ -224,39 +224,40 @@
 									</div>
 									
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="meal_gluten_free">
-										<label for="meal_gluten_free">
+										<input class="form-check-input" type="checkbox" value="" id="Soju">
+										<label for="Soju">
 											Soju
 										</label>
 									</div>
 
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="meal_gluten_free">
-										<label for="meal_gluten_free">
+										<input class="form-check-input" type="checkbox" value="" id="Beer">
+										<label for="Beer">
 											Beer
 										</label>
 									</div>
 								</fieldset>
 								
 								<div class="form-floating">
-									<textarea id="message" name="Message" placeholder="Message" class="form-control" rows="4"></textarea>
+									<textarea id="message" name="Message" placeholder="Message" class="form-control" rows="4">
+									</textarea>
 									<label for="message">Send any other Options</label>
 								</div>
 								
-								<div class="center">
+								<!-- <div class="center">
 									<button class="g-recaptcha" 
 										data-sitekey="6LcpEqkkAAAAADtsbijeRHLdcbreS8C4sL2zZ0ts" 
 										data-callback='onSubmit' 
 										data-action='submit'>Submit</button>
 									</form>
-								</div>
-								<!-- <div class="center">
-									<div class="g-recaptcha" data-sitekey="6LcTJDEUAAAAACOL__6CedRrCb6m2M94OSmqF4MV"></div>
 								</div> -->
 								
 								<div class="form_status_message"></div>
 								<div class="center">
-									<button type="submit" class="btn btn-primary submit_form">Send</button>
+									<button type="submit" class="g-recaptcha btn btn-primary submit_form"
+										data-sitekey="6LcpEqkkAAAAADtsbijeRHLdcbreS8C4sL2zZ0ts" 
+										data-callback='onSubmit' 
+										data-action='submit'>Send</button>
 								</div>
 							</form>
 						</div>

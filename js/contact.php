@@ -1,12 +1,12 @@
 <?php 
 // Google reCAPTCHA API key configuration 
-$siteKey     = 'Insert_reCaptcha_Site_Key'; 
-$secretKey     = 'Insert_reCaptcha_Secret_Key'; 
+$siteKey     = '6LcpEqkkAAAAADtsbijeRHLdcbreS8C4sL2zZ0ts'; 
+$secretKey     = '6LcpEqkkAAAAALw6AMTwPt25uKCIEqGVAlx8lfjy'; 
  
 // Email configuration 
-$toEmail = 'admin@example.com'; 
-$fromName = 'Sender Name'; 
-$formEmail = 'sender@example.com'; 
+$toEmail = 'kimyoungjin06@gmail.com'; 
+$fromName = 'Wedding RSVP'; 
+$formEmail = 'kimyoungjin06@gmail.com'; 
  
 $postData = $statusMsg = $valErr = ''; 
 $status = 'error'; 
@@ -17,7 +17,14 @@ if(isset($_POST['submit'])){
     $postData = $_POST; 
     $name = trim($_POST['name']); 
     $email = trim($_POST['email']); 
-    $subject = trim($_POST['subject']); 
+    $attend_wedding = trim($_POST['attend_wedding_yes']); 
+    $need_room = trim($_POST['need_room_yes']); 
+    $need_bus = trim($_POST['need_bus_yes']); 
+    $num_guests = trim($_POST['num_guests']); 
+    $meal_meat = trim($_POST['meal_meat']); 
+    $meal_fish = trim($_POST['meal_fish']); 
+    $Soju = trim($_POST['Soju']); 
+    $Beer = trim($_POST['Beer']); 
     $message = trim($_POST['message']); 
      
     // Validate form fields 
@@ -26,10 +33,7 @@ if(isset($_POST['submit'])){
     } 
     if(empty($email) || filter_var($email, FILTER_VALIDATE_EMAIL) === false){ 
         $valErr .= 'Please enter a valid email.<br/>'; 
-    } 
-    if(empty($subject)){ 
-        $valErr .= 'Please enter subject.<br/>'; 
-    } 
+    }
     if(empty($message)){ 
         $valErr .= 'Please enter your message.<br/>'; 
     } 
@@ -54,7 +58,14 @@ if(isset($_POST['submit'])){
                     <h2>Contact Request Details</h2> 
                     <p><b>Name: </b>".$name."</p> 
                     <p><b>Email: </b>".$email."</p> 
-                    <p><b>Subject: </b>".$subject."</p> 
+                    <p><b>attend_wedding: </b>".$attend_wedding."</p> 
+                    <p><b>need_room: </b>".$need_room."</p> 
+                    <p><b>need_bus: </b>".$need_bus."</p> 
+                    <p><b>num_guests: </b>".$num_guests."</p> 
+                    <p><b>meal_meat: </b>".$meal_meat."</p> 
+                    <p><b>meal_fish: </b>".$meal_fish."</p> 
+                    <p><b>Soju: </b>".$Soju."</p> 
+                    <p><b>Beer: </b>".$Beer."</p> 
                     <p><b>Message: </b>".$message."</p> 
                 "; 
                  
