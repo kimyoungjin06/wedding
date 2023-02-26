@@ -686,8 +686,8 @@ var Neela;
                         (r += 1))));
           }),
           (c += "&len=" + r),
-          u(".g-recaptcha").length &&
-            (c += "&recaptcha=" + grecaptcha.getResponse()),
+        //   u(".g-recaptcha").length &&
+        //     (c += "&recaptcha=" + grecaptcha.getResponse()),
           (t = function () {
             u(".form_status_message").html(
               '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
@@ -712,11 +712,13 @@ var Neela;
                     "ok" === e
                       ? (t(), i[0].reset())
                       : m.showSucess("Success to Send ;)"),
+                    //   : m.showError(m.contactFormRecaptchaErrorMsg),
                     (m.sendingMail = !1),
                     u(".g-recaptcha").length && grecaptcha.reset();
                 },
                 error: function () {
-                  a(), m.showError(), (m.sendingMail = !1);
+                  a(), m.showSucess("Thanks for your submission!"), (m.sendingMail = !1);
+                //   a(), m.showError(), (m.sendingMail = !1);
                 },
               })),
           !1
@@ -726,7 +728,7 @@ var Neela;
     showSucess: function (e = "") {
      "" === e,
         u(".form_status_message").html(
-            '<div class="alert alert-safe alert-dismissible fade show" role="alert">' +
+            '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
               e +
               '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
           );
@@ -734,7 +736,7 @@ var Neela;
     showError: function (e = "") {
       "" === e && (e = this.contactFormErrorMsg),
         u(".form_status_message").html(
-          '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+          '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
             e +
             '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
         );
