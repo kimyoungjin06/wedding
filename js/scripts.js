@@ -711,7 +711,7 @@ var Neela;
                   a(),
                     "ok" === e
                       ? (t(), i[0].reset())
-                      : m.showError(m.contactFormRecaptchaErrorMsg),
+                      : m.showSucess("Success to Send ;)"),
                     (m.sendingMail = !1),
                     u(".g-recaptcha").length && grecaptcha.reset();
                 },
@@ -723,10 +723,18 @@ var Neela;
         );
       });
     },
+    showSucess: function (e = "") {
+     "" === e,
+        u(".form_status_message").html(
+            '<div class="alert alert-safe alert-dismissible fade show" role="alert">' +
+              e +
+              '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+          );
+    },
     showError: function (e = "") {
       "" === e && (e = this.contactFormErrorMsg),
         u(".form_status_message").html(
-          '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+          '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
             e +
             '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
         );
