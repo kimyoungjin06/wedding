@@ -45,6 +45,9 @@
 	<!-- Owl Carousel CSS -->
 	<link href="css/owl.carousel.min.css" rel="stylesheet" />
 	
+	<!-- PageClip CSS -->
+	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
+
 	<!-- Template CSS -->
 	<link href="css/style.css" rel="stylesheet" />
 	
@@ -133,7 +136,8 @@
 						<div class="form-wrapper flowers neela-style">
 							<h1 class="section-title">Will you Attend?</h1>
 							
-							<form id="form-rsvp" method="POST" action="https://formspree.io/f/xgebkbke">
+							<!-- <form id="form-rsvp" method="POST" action="https://formspree.io/f/xgebkbke"> -->
+							<!-- <form id="form-rsvp" action="https://send.pageclip.co/5GZ6W5JueZxC4lI1zfJuCSRreiXbcv4G/wedding_RSVP" class="pageclip-form" method="post">
 								
 								<div class="form-floating">
 									<input type="text" name="Name" id="name" placeholder="Your Name*" class="form-control required fromName">
@@ -242,15 +246,92 @@
 									<textarea id="message" name="Message" placeholder="Message" class="form-control" rows="4">
 									</textarea>
 									<label for="message">Send any other Options</label>
-								</div>
+								</div> -->
 								<!-- <div class="center">
 									<div class="g-recaptcha" data-sitekey="6Lco7rUkAAAAAAu6PTeXbB8Nu558eulBvAl7nx1W"></div>
 								</div> -->
-								<div class="form_status_message"></div>
+								<!-- <div class="form_status_message"></div>
 								<div class="center">
-									<button type="submit" class="btn btn-primary submit_form">Send</button>
+									<button type="submit" class="btn btn-primary submit_form pageclip-form__submit">Send</button>
 								</div>
+							</form> -->
+
+							<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScu7RYQiMB3PUpir3x5ZnZpK7hj-4mHyKruioLhmB95npEd9w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+								<div class="form-floating">
+									<input type="text" name="entry.81903358" id="entry.81903358" placeholder="Your Name*" class="form-control required fromName">
+									<label for="name">Your Name*</label>
+								</div>
+								
+								<div class="form-floating">
+									<input type="email" name="entry.643616490" id="entry.643616490" placeholder="E-mail*" class="form-control required fromEmail">
+									<label for="email">E-mail*</label>
+								</div>
+
+								<div class="form-check-wrapper">
+									<label>Attend:</label>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.122407646" id="entry.122407646" value="Only Ceremony">
+										<label for="Only+Ceremony">Only Ceremony</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.122407646" id="entry.122407646" value="Up to Dinner Party">
+										<label for="Up+To+Dinner+Party">Up To Dinner Party</label>
+									</div>
+									
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.122407646" id="entry.122407646" value="Up to Over Night">
+										<label for="Up+To+Over+Night">Up To Over Night</label>
+									</div>
+								</div>
+
+								<div class="form-check-wrapper">
+									<label>Bus Reservation:</label>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.1194167424" id="entry.1194167424" value="Driving">
+										<label for="Driving">Driving</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.1194167424" id="entry.1194167424" value="Bus From Daejeon">
+										<label for="Bus+From+Daejeon">Bus From Daejeon</label>
+									</div>
+									
+									<div class="form-check form-check-inline">
+										<input class="form-check-input required" type="radio" name="entry.1194167424" id="entry.1194167424" value="Bus From Ansan">
+										<label for="Bus+From+Ansan">Bus From Ansan</label>
+									</div>
+								</div>
+								
+
+								<div class="form-floating">
+									<select class="form-select" aria-label="Number of guests" name="entry.514605082" id="entry.514605082">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value=">5">>5</option>
+									</select>
+									
+									<label for="num_guests">Number of guests</label>
+								</div>
+
+								<div class="form-floating">
+									<textarea id="entry.1209414153" name="entry.1209414153" placeholder="Message" class="form-control" rows="4">
+									</textarea>
+									<label for="message">Send any other Options</label>
+								</div>
+								<button type="submit" value="Submit" class="btn btn-primary">Send</button>
 							</form>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+							<!-- https://docs.google.com/forms/d/e/1FAIpQLScu7RYQiMB3PUpir3x5ZnZpK7hj-4mHyKruioLhmB95npEd9w/viewform?usp=pp_url&entry.122407646=Ceremony
+								?usp=pp_url
+								&entry.81903358=Young+Jin+Kim
+								&entry.643616490=kimyoungjin06@gmail.com
+								&entry.122407646=Up+To+Dinner+Party
+								&entry.514605082=%3E5
+								&entry.1194167424=Driving
+								&entry.1209414153=Happy! -->
 						</div>
 					</div>
 				</div>
@@ -331,6 +412,15 @@
 	<script src="js/variables.js"></script>
 	<script src="js/scripts.js"></script>
 	<!-- <script src="js/template.settings.js"></script> -->
+
+	<!-- PageClip Scripts -->
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	$('#gform *').fadeOut(2000);
+	$('#gform').prepend('Your submission has been processed...');
+	});
+	</script>
 
 	<!-- Google reCaptcha API for RSVP -->
 	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
