@@ -49,6 +49,7 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <link href="https://webfontworld.github.io/ChosunGs/ChosunGs.css" rel="stylesheet">
     <noscript>
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
@@ -160,6 +161,34 @@
                   SEPT <span>23</span> 2023
                 </div>
               </div>
+              <br><br><br><br><br><br><br><br>
+              <div
+                  class="hero-subtitle light"
+                  data-animation-direction="fade"
+                  data-animation-delay="1000"
+                >
+                <div style="font-style: normal; font-family: 'ChosunGs';">
+                  <span style="
+                  /* font-style: italic ;  */
+                  font-weight: bold; 
+                  font-size: 1.5em;
+                  line-height: 1.0em; 
+                  /* color: navy; */
+                  /* font-family: arial; */
+                  ">드리는 글</span><br><br>
+                    먼저 죄송하다는 말씀을 미리 드립니다.<br>
+                    저희는 일반적인 결혼식과는 조금 다르게, 1박 2일로 휴양지에서 식을 진행하려 합니다.<br>
+                    덕분에 많은 분들이 편하게 오시기는 어렵겠지만, 최대한 여러분들을 모시고자 인원수가 충분하다면, 안산과 대전 두 곳에서 버스를 대절할 생각입니다.<br>
+                    혹여나, 직접 결혼식에 오시지 못하시더라도, 저희의 모습을 잘 남겨서 식이 지난 뒤에 그 이야기를 생생하게 전달드리고자 합니다.<br>
+                    <br>
+                    1박 2일로 진행되는 만큼, 오시는 손님들의 인원과 일정에 맞춰 정확하게 준비해야 합니다.<br>
+                    아래의 RSVP에서 참여하시는 분들은 정확하게 적어주시기 바랍니다.<br>
+                    숙소 예약은 4월부터 진행해야 하기 때문에, 버스/숙박은 3월까지만 받도록 하겠습니다.<br>
+                    긴 글 읽어주셔서 감사합니다!<br>
+                    <br>
+                    김영진, 유하나 올림
+                </div>
+                </div>
             </div>
           </div>
         </div>
@@ -304,6 +333,7 @@
                   target="hidden_iframe"
                   onsubmit="submitted=true;"
                 >
+                  
                   <div class="form-floating">
                     <input
                       type="text"
@@ -312,22 +342,22 @@
                       placeholder="Your Name*"
                       class="form-control required fromName"
                     />
-                    <label for="name">Your Name*</label>
+                    <label for="name">성함*</label>
                   </div>
 
                   <div class="form-floating">
                     <input
-                      type="email"
+                      type="mobile"
                       name="entry.643616490"
                       id="entry.643616490"
                       placeholder="E-mail*"
                       class="form-control required fromEmail"
                     />
-                    <label for="email">E-mail*</label>
+                    <label for="email">휴대폰번호*</label>
                   </div>
 
                   <div class="form-check-wrapper">
-                    <label>Attend:</label>
+                    <label>참석 예정:</label>
                     <div class="form-check form-check-inline">
                       <input
                         class="form-check-input required"
@@ -336,7 +366,7 @@
                         id="entry.122407646"
                         value="Only Ceremony"
                       />
-                      <label for="Only+Ceremony">Only Ceremony</label>
+                      <label for="Only+Ceremony">예식만</label>
                     </div>
 
                     <div class="form-check form-check-inline">
@@ -347,7 +377,7 @@
                         id="entry.122407646"
                         value="Up to Dinner Party"
                       />
-                      <label for="Up+To+Dinner+Party">Up To Dinner Party</label>
+                      <label for="Up+To+Dinner+Party">저녁 만찬</label>
                     </div>
 
                     <div class="form-check form-check-inline">
@@ -358,12 +388,12 @@
                         id="entry.122407646"
                         value="Up to Over Night"
                       />
-                      <label for="Up+To+Over+Night">Up To Over Night</label>
+                      <label for="Up+To+Over+Night">숙박</label>
                     </div>
                   </div>
 
                   <div class="form-check-wrapper">
-                    <label>Bus Reservation:</label>
+                    <label>버스 예약:</label>
                     <div class="form-check form-check-inline">
                       <input
                         class="form-check-input required"
@@ -372,7 +402,7 @@
                         id="entry.1194167424"
                         value="Driving"
                       />
-                      <label for="Driving">Driving</label>
+                      <label for="Driving">자차(예약X)</label>
                     </div>
 
                     <div class="form-check form-check-inline">
@@ -383,7 +413,7 @@
                         id="entry.1194167424"
                         value="Bus From Daejeon"
                       />
-                      <label for="Bus+From+Daejeon">Bus From Daejeon</label>
+                      <label for="Bus+From+Daejeon">대전~식장</label>
                     </div>
 
                     <div class="form-check form-check-inline">
@@ -394,8 +424,9 @@
                         id="entry.1194167424"
                         value="Bus From Ansan"
                       />
-                      <label for="Bus+From+Ansan">Bus From Ansan</label>
+                      <label for="Bus+From+Ansan">안산~식장</label>
                     </div>
+                    <label>*버스는 저녁 만찬 이후(약 9시) 출발 예정<br>(변동가능, 의견은 아래에 남겨주세요!)</label>
                   </div>
 
                   <div class="form-floating">
@@ -412,7 +443,7 @@
                       <option value=">5">>5</option>
                     </select>
 
-                    <label for="num_guests">Number of guests</label>
+                    <label for="num_guests">인원 수</label>
                   </div>
 
                   <div class="form-floating">
@@ -424,10 +455,10 @@
                       rows="4"
                     >
                     </textarea>
-                    <label for="message">Send any other Options</label>
+                    <label for="message">남기실 말씀</label>
                   </div>
                   <button type="submit" value="Submit" class="btn btn-primary">
-                    Send
+                    보내기
                   </button>
                 </form>
                 <iframe
@@ -535,7 +566,6 @@
         $("#gform").prepend(
           "Your submission has been processed! ;)<br><br> If the information is not correct,<br>Please re-submit."
         );
-		
       });
     </script>
 
