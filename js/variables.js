@@ -16,15 +16,22 @@ var hero_full_screen = true;                    //If true, the hero section will
 
 //HERO BACKGROUND SLIDESHOW IMAGES
 var slidehow_images = [
-    "images/HY01.jpeg",
-    "images/HN01.png",
-    "images/HY02.jpeg",
-    "images/HN02.jpeg",
-    "images/HY03.jpeg",
-    "images/HN03.JPG",
-    "images/HY04.jpeg",
-    "images/HY05.jpeg",
-];
+    "images/HY_1.jpg",
+    "images/HY_2.jpg",
+    "images/HY_3.jpg",
+    "images/HY_4.jpg",
+    "images/HY_5.jpg",
+    "images/HY_6.jpg",
+    "images/HY_7.jpg",
+    // "images/HY_8.jpg",
+    "images/HY_9.jpg",
+    // "images/HY_10.jpg",
+    "images/HY_11.jpg",
+    "images/HY_12.jpg",
+    "images/HY_13.jpg",
+    "images/HY_14.jpg",
+    "images/HY_15.jpg",
+    "images/HY_16.jpg",];
 
 //TIMELINE PARALLAX
 var timeline_parallax = true;                   //If false, the timeline items will not move on mousemove.
