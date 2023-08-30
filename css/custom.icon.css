@@ -1,0 +1,41 @@
+.cus-fa {
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900); }
+  
+  .cus-fa,
+  .fa-classic,
+  .fa-sharp,
+  .fas,
+  .cus-fa-solid,
+  .far,
+  .fa-regular,
+  .fab,
+  .fa-brands {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto; }
+  
+
+.fa-custom-diamond::before {
+    background: url"../image/icon/diamon.png";
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.fa-custom-diamond::after{
+    content: url"../image/icon/diamon.png";
+    display: block;
+    height: 40px;  /*height of icon */
+    width: 40px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 0px;
+    left: -40px;
+      /*background */
+    background: #F8E6AE url(ico.gif) no-repeat 0px 0px;
+}

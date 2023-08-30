@@ -6347,6 +6347,7 @@ readers do not read off random characters that represent icons */
 .fa-level-up-alt::before {
   content: "\f3bf"; }
 
+
 .sr-only,
 .fa-sr-only {
   position: absolute;
